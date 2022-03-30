@@ -27,7 +27,9 @@
 	"files": [
 		"lib",
 		"index.js",
-		"nested.js"
+		"nested.js",
+		"index.d.ts",
+		"nested.d.ts"
 	],
 	"keywords": [
 		"color",
