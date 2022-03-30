@@ -1,0 +1,71 @@
+{
+	"name": "@devteks/colors",
+	"version": "0.0.1",
+	"description": "Terminal string coloring",
+	"license": "MIT",
+	"repository": "mosamuhana/colors",
+	"funding": "https://github.com/mosamuhana/colors?sponsor=1",
+	"main": "./index.js",
+	"imports": {
+		"#core": {
+			"node":    "./lib/core.node.js",
+			"default": "./lib/core.browser.js"
+		}
+	},
+	"exports": {
+		".":        "./index.js",
+		"./nested": "./nested.js"
+	},
+	"typesVersions": {
+		"*": {
+			".":        ["./index.d.ts"],
+			"./nested": ["./nested.d.ts"]
+		}
+	},
+	"engines": {
+		"node": ">=12.17.0"
+	},
+	"scripts": {
+		"test": "xo && c8 ava && tsd",
+		"bench": "matcha benchmark.js"
+	},
+	"files": [
+		"lib",
+		"index.js",
+		"nested.js"
+	],
+	"keywords": [
+		"color",
+		"colour",
+		"colors",
+		"terminal",
+		"console",
+		"cli",
+		"string",
+		"ansi",
+		"style",
+		"styles",
+		"tty",
+		"formatting",
+		"rgb",
+		"256",
+		"shell",
+		"xterm",
+		"log",
+		"logging",
+		"command-line",
+		"text"
+	],
+	"devDependencies": {
+		"@types/node": "^16.11.10",
+		"ava": "^3.15.0",
+		"c8": "^7.10.0",
+		"color-convert": "^2.0.1",
+		"execa": "^6.0.0",
+		"log-update": "^5.0.0",
+		"matcha": "^0.7.0",
+		"tsd": "^0.19.0",
+		"xo": "^0.47.0",
+		"yoctodelay": "^2.0.0"
+	}
+}
