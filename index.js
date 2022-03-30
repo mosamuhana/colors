@@ -3,8 +3,8 @@ const { isSupported, styles } = require('#core');
 let enabled = isSupported;
 
 const lib = {
-  enableColors() { enabled = isSupported; return this; },
-  disableColors() { enabled = false; return this; },
+  enableColors() { enabled = isSupported; },
+  disableColors() { enabled = false; },
   get isEnabled() { return enabled; },
   get isSupported() { return isSupported; },
 };

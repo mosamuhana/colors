@@ -49,8 +49,8 @@ export const bgMagentaBright: Func;
 export const bgCyanBright: Func;
 export const bgWhiteBright: Func;
 
-export const enableColors: () => Instance;
-export const disableColors: () => Instance;
+export const enableColors: () => void;
+export const disableColors: () => void;
 
 export const isSupported: boolean;
 export const isEnabled: boolean;

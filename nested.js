@@ -74,9 +74,8 @@ class ColorClass {
   get isSupported() { return isSupported; }
   get isEnabled() { return this.#isEnabled; }
 
-  enableColors() { this.#isEnabled = isSupported; return this; }
-
-  disableColors() { this.#isEnabled = false; return this; }
+  enableColors() { this.#isEnabled = isSupported; }
+  disableColors() { this.#isEnabled = false; }
 }
 
 module.exports = new ColorClass();

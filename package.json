@@ -1,6 +1,6 @@
 {
 	"name": "@devteks/colors",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Terminal string coloring",
 	"license": "MIT",
 	"repository": "mosamuhana/colors",
